@@ -19,7 +19,7 @@ def select_file():
         return None
 
 def is_name(value):
-    # Define a simple pattern for names (you can adjust this pattern as needed)
+    # Define a simple pattern for names
     # Assuming names are composed of alphabets and may include spaces, hyphens, and apostrophes
     pattern = re.compile(r"^[A-Za-z\s'-]+$")
     return bool(pattern.match(value))
